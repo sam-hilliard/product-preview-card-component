@@ -113,6 +113,8 @@ h1 {
 /* button styles */
 
 button {
+    --button-active: hsl(158, 36%, 25%);
+
     justify-content: center;
     
     background-color: var(--primary-color);
@@ -124,6 +126,11 @@ button {
     padding: 1rem 0;
     border: none;
     border-radius: var(--card-radius);
+}
+
+button:hover {
+    background-color: var(--button-active);
+    cursor: pointer;
 }
 
 /* Desktop layout */
